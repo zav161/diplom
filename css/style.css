@@ -1,0 +1,73 @@
+.header__logo-block{
+    background-color: #C0C0C0;
+    
+}
+.header__contact-block{
+    background-color: #404142;
+}
+
+.header__logo-text{
+/*    padding: 50px;*/
+    font-family: Helvetica;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 0.5s;
+    font-size:2.5em;
+    font-weight: bold;
+}
+
+.header-phone{
+    color: white;
+    font-weight:bold;
+}
+
+.header__contact-block{
+    padding-top:1em;
+}
+.contact-img{
+    cursor: pointer;
+}
+.nav-link{
+    color:aliceblue;
+    font-weight: bold;
+}
+.nav-link:hover{
+
+    color: steelblue;
+    transition: all 1s;
+}
+.vcenter { 
+display: inline-block; 
+vertical-align: middle; 
+float: none; 
+}
+
+@media (max-width:1108px) {
+    .header__logo-text {
+        font-size:2em;
+    }
+}
+
+@media (max-width:780px) {
+    .header__logo-text {
+        font-size:1.5em;
+    }
+    .header-phone{
+        font-size:0.8em;
+    }
+}
+
+    
