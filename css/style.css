@@ -1,3 +1,7 @@
+body{
+  background: rgba(232, 236, 240 .3)
+}
+
 .header__logo-block{
     background-color: #C0C0C0;
     
@@ -27,6 +31,7 @@
     transition: all 0.5s;
     font-size:2.5em;
     font-weight: bold;
+
 }
 
 .header-phone{
@@ -46,7 +51,7 @@
 }
 .nav-link:hover{
 
-    color: steelblue;
+    color: #D13438;
     transition: all 1s;
 }
 .vcenter { 
@@ -59,6 +64,13 @@ float: none;
     .header__logo-text {
         font-size:2em;
     }
+    
+    .custom-text p {
+        font-size:1em;
+    }
+    .custom-title {
+        font-size:1.5em!important;
+    }
 }
 
 @media (max-width:780px) {
@@ -70,4 +82,13 @@ float: none;
     }
 }
 
+.custom-title{
+    font-size:2.2em;
+}
+
+/*
+.custom-image{
+    min-width:300px;
+}
+*/
     
