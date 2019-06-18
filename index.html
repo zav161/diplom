@@ -6,8 +6,13 @@
     
     <!-- BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/form-icons.css">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -72,15 +77,15 @@
             </div>
             <div class="col-md col tex-center align-self-center">
                 <span class='custom-text'>
-                    <h1 class="display-4 custom-title">Информация о нас</h1>
-                    <p class='lead'>АвтоПрофи — это автосервис в западном микрорайоне (ЗЖМ) Ростова, который на протяжении 7 лет осуществляет профессиональное техническое обслуживание всех видов транспорта.</p>
+                    <h1 class="display-4 custom-title">О НАС</h1>
+                    <p class='lead'><b>АвтоПрофи</b> — это автосервис в западном микрорайоне (ЗЖМ) Ростова, который на протяжении 7 лет осуществляет профессиональное техническое обслуживание всех видов транспорта.</p>
                     <p class='lead'>Перед началом ремонта мы проводим диагностику автомобиля и предлагаем несколько вариантов решения проблемы, объясняя все технические нюансы.</p>
                 </span>
             </div>
         </div>
         <hr class="my-4">
         <div class="row my-auto justify-content-center">
-            <h1 class="display-4 custom-title">Услуги</h1>
+            <h1 class="display-4 custom-title">УСЛУГИ</h1>
         </div>
         <hr class="my-4">
         <div class="container text-center">
@@ -128,6 +133,94 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <hr class="my-4">
+        <section class="section pb-5 text-center">
+        <h1 class="display-4 custom-title">ГДЕ МЫ НАХОДИМСЯ</h1>
+        <br>
+
+          <div class="row ml-4 mr-4">
+
+            <div class="col-lg-4 mb-3">
+              <div class="card">
+                <div class="card-body">
+
+                    <div class="form-header blue accent-1">
+                    <h3>Напишите нам:</h3>
+                    </div>
+
+                    <p class='lead'>Мы ответим вам в течение 2-3 часов</p>
+                    <br>
+                    <form name="contact-form">
+                        <div class="form-group">
+                            <div class="icon-addon addon-lg">
+                                <input type="text" placeholder="Введите ваше имя" class="form-control" id="name">
+                                <label for="name" class="fa fa-user" rel="tooltip" title="name"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon-addon addon-lg">
+                                <input type="text" placeholder="Введите ваш Email" class="form-control" id="email">
+                                <label for="email" class="fa fa-envelope" rel="tooltip" title="email"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon-addon addon-lg">
+                                <input type="text" placeholder="Укажите тему" class="form-control" id="subject">
+                                <label for="subject" class="fa fa-tag" rel="tooltip" title="subject"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="icon-addon addon-lg">
+                                <textarea id="text" placeholder="Опишите свой вопрос" class="form-control md-textarea" rows="5"></textarea>
+                                <label for="text" class="fa fa-pencil" rel="tooltip" title="text"></label>
+
+                            </div>
+                        </div>   
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-outline-primary">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-8">
+              <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ba884dc9f97425b0b30cb65b045a09a1299f366c5574124c67a0cf66d0bca09&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+
+              <br>
+
+              <div class="row text-center">
+                <div class="col-md-4">
+                  <img src="img/map/icon1.png">
+                  <p>Буквенная улица, 17<br>
+                  Ростов-на-Дону</p>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="img/map/icon2.png">
+                    <p>8 (956) 456-34-56<br>
+                    8 (956) 456-22-11
+                    <p>Пн-Пт, 8:00-22:00</p>
+                </div>
+
+                <div class="col-md-4">
+                  <img src="img/map/icon3.png">
+                  <p>info@autoprofi.ru<br>
+                   sale@autoprofi.ru</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+    </div>
+
     <!-- BOOTSTRAP JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
