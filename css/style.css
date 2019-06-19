@@ -95,3 +95,27 @@ float: none;
 }
 */
 
+.section-footer{
+  background-color: #404142;
+
+}
+.footer-title{color: #CCCCCC;}
+.footer-text{
+  color:#F2F2F2;
+}
+
+.footer-title-2{
+  text-shadow: -1px -1px #FFF,
+               -1px -1px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               1px 1px #FFF,
+               1px -1px #FFF,
+               1px -1px #FFF,
+               -1px -1px 1px #BBB,
+               -2px 2px 1px #BBB,
+               2px 2px 1px #BBB,
+               2px -2px 1px #BBB;
+color: white;
+}
