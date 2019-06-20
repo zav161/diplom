@@ -2,3 +2,10 @@
 .carousel-inner .carousel-item-right.active,.carousel-inner .carousel-item-next{transform:translateX(17%)}
 .carousel-inner .carousel-item-left.active,.carousel-inner .carousel-item-prev{transform:translateX(-17%)}
 .carousel-inner .carousel-item-right,.carousel-inner .carousel-item-left{transform:translateX(0)}
+
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+    background-color: black;
+    width:40px;
+    height: 40px;
+    transition: all 1s;
+}

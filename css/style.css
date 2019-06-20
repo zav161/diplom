@@ -1,9 +1,6 @@
 html {
 scroll-behavior: smooth;
 }
-body{
-  background: rgba(232, 236, 240 .3)
-}
 
 .header__logo-block{
     background-color: #C0C0C0;
@@ -77,6 +74,9 @@ float: none;
 }
 
 @media (max-width:780px) {
+    #slider {
+        display:none;
+    }
     .header__logo-text {
         font-size:1.5em;
     }
@@ -85,15 +85,21 @@ float: none;
     }
 }
 
+@media (max-width:375px) {
+    .form-group input::placeholder, .form-group textarea::placeholder{
+        font-size:0.8em;
+    }
+    .card-body{
+        padding: 16px;
+    }
+}
+
+
 .custom-title{
     font-size:2.2em;
 }
 
-/*
-.custom-image{
-    min-width:300px;
-}
-*/
+
 
 .section-footer{
   background-color: #404142;
@@ -119,3 +125,27 @@ float: none;
                2px -2px 1px #BBB;
 color: white;
 }
+
+div.scrollup {
+  position: fixed; /* фиксированная позиция */
+  color: #fff; /* цвет текста */
+  background-color: #286090; /* цвет заднего фона */
+  right: 20px; /* расстояние от правого края */
+  bottom: 0px; /* расстояние от нижнего края */
+  padding: 4px 10px; /* отступы до содержимого блока */
+  font-size: 20px; /* размер шрифта (иконки) */
+  border-top-left-radius: 4px; /* скругление верхнего левого угла */
+  border-top-right-radius: 4px; /* скругление верхнего правого угла */
+  cursor: pointer; /* форма курсора */
+  display: none; /* не отображать элемент */
+  text-align: center; /*выравнивание содержимого элемента по центру */
+}
+div.scrollup:hover {
+  background-color: #000; /* цвет заднего фона при наведении */
+}
+
+/*
+body{
+  background: rgba(232, 236, 240 .3)
+}
+*/
