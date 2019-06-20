@@ -53,6 +53,7 @@
                                 
                             </div>
                         </div>
+
                         <div class="col-md my-auto">
                             <ul class="nav justify-content-center">
                               <li class="nav-item">
@@ -157,28 +158,28 @@
 
                     <p class='lead'>Мы обязательно вам ответим!</p>
                     <br>
-                    <form name="contact-form">
+                    <form name="contact-form" method="POST">
                         <div class="form-group">
                             <div class="icon-addon addon-lg">
-                                <input required maxlength=15 type="text" placeholder="Введите ваше имя" class="form-control" id="name">
+                                <input name="name" required maxlength=15 type="text" placeholder="Введите ваше имя" class="form-control" id="name">
                                 <label for="name" class="fa fa-user" rel="tooltip" title="name"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="icon-addon addon-lg">
-                                <input required maxlength=25 type="email" placeholder="Введите ваш Email" class="form-control" id="email">
+                                <input name="email" required maxlength=25 type="email" placeholder="Введите ваш Email" class="form-control" id="email">
                                 <label for="email" class="fa fa-envelope" rel="tooltip" title="email"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="icon-addon addon-lg">
-                                <input required maxlength=50 type="text" placeholder="Укажите тему" class="form-control" id="subject">
+                                <input name="subject" required maxlength=50 type="text" placeholder="Укажите тему" class="form-control" id="subject">
                                 <label for="subject" class="fa fa-tag" rel="tooltip" title="subject"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="icon-addon addon-lg">
-                                <textarea maxlength=255 id="text" placeholder="Опишите свой вопрос" class="form-control md-textarea" rows="5"></textarea>
+                                <textarea name="msg" maxlength=255 id="text" placeholder="Опишите свой вопрос" class="form-control md-textarea" rows="5"></textarea>
                                 <label for="text" class="fa fa-pencil" rel="tooltip" title="text"></label>
 
                             </div>
@@ -276,6 +277,7 @@
     <hr>
     <div class="container-fluid">
         <div class="row ml-4 mr-4 mb-4 mt-4">
+
             <div class="col-md-8">
                 <h1 class="display-4 custom-title">ЕСТЬ ВОПРОСЫ? СВЯЖИТЕСЬ С НАМИ СЕЙЧАС!</h1>
             </div>

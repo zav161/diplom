@@ -19,3 +19,23 @@ $(window).scroll(function() {
     $('.scrollup').fadeOut();
   }
 });
+
+$('form[name=contact-form]').submit(function(event){
+  event.preventDefault();
+  let dataArray = $(this).serializeArray();
+  if (!/^[a-zA-Zа-яА-Я]*$/g.test(dataArray[0]['value'])) {
+      alert("Неверное имя! Имя может содержать только буквы");
+      return false;
+  }
+
+  $.ajax({
+    url: "email_send.php",
+    type: "post",
+    data: dataArray,
+    contentType: "application/json; charset=utf-8",
+    dataType: "json",
+    success: function(response) {
+      console.log(response);
+    }
+  })
+});
