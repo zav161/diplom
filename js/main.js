@@ -27,15 +27,27 @@ $('form[name=contact-form]').submit(function(event){
       alert("Неверное имя! Имя может содержать только буквы");
       return false;
   }
-
+  // console.log(dataArray);
+  let data = {
+      'name': dataArray[0]['value'],
+      'email': dataArray[1]['value'],
+      'subject': dataArray[2]['value'],
+      'msg': dataArray[3]['value']
+  };
   $.ajax({
     url: "email_send.php",
     type: "post",
-    data: dataArray,
-    contentType: "application/json; charset=utf-8",
+    data: data,
     dataType: "json",
     success: function(response) {
       console.log(response);
+      let alert = `<div class="alert alert-success" role="alert">
+                      <strong>Успешно! </strong>`+response['msg']+`
+                    </div>`;
+      $('.card-body').prepend(alert);
+      $('form *').prop('disabled', true);
+      $('#submitButton').css('display','none');
+      
     }
   })
 });
